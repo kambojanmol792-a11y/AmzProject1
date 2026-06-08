@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="0" total="9" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-29T00:11:22 IST" name="Regression Suite" finished-at="2026-05-29T00:15:13 IST" duration-ms="230731">
+    <groups>
+    </groups>
+    <test started-at="2026-05-29T00:11:22 IST" name="Chrome Test" finished-at="2026-05-29T00:12:19 IST" duration-ms="56443">
+      <class name="package1.project1_maven.TC_2LoginToAmazonAndLogout">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@74235045]" started-at="2026-05-29T00:11:22 IST" name="BrowserLaunch" finished-at="2026-05-29T00:11:27 IST" duration-ms="4456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="Loginlogout()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@74235045]" started-at="2026-05-29T00:11:27 IST" name="Loginlogout" finished-at="2026-05-29T00:11:48 IST" duration-ms="20809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginlogout -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@74235045]" started-at="2026-05-29T00:11:48 IST" name="BrowserQuit" finished-at="2026-05-29T00:11:48 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC_2LoginToAmazonAndLogout -->
+      <class name="package1.project1_maven.TC1_LoginToAmazon">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:11:48 IST" name="BrowserLaunch" finished-at="2026-05-29T00:11:51 IST" duration-ms="3499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method retried="true" signature="withValidCreds()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:11:51 IST" name="withValidCreds" finished-at="2026-05-29T00:12:04 IST" duration-ms="12438" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Title not matched expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon Sign In]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title not matched expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon Sign In]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at package1.project1_maven.TC1_LoginToAmazon.withValidCreds(TC1_LoginToAmazon.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCreds -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:12:04 IST" name="BrowserQuit" finished-at="2026-05-29T00:12:04 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:12:04 IST" name="BrowserLaunch" finished-at="2026-05-29T00:12:07 IST" duration-ms="2696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="withValidCreds()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:12:07 IST" name="withValidCreds" finished-at="2026-05-29T00:12:18 IST" duration-ms="11624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCreds -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@477b4cdf]" started-at="2026-05-29T00:12:18 IST" name="BrowserQuit" finished-at="2026-05-29T00:12:19 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC1_LoginToAmazon -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2026-05-29T00:12:19 IST" name="FireFox Test" finished-at="2026-05-29T00:14:20 IST" duration-ms="121670">
+      <class name="package1.project1_maven.TC_2LoginToAmazonAndLogout">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:12:19 IST" name="BrowserLaunch" finished-at="2026-05-29T00:13:22 IST" duration-ms="63687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method retried="true" signature="Loginlogout()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:13:22 IST" name="Loginlogout" finished-at="2026-05-29T00:13:26 IST" duration-ms="3855" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1612fe00-01f5-464a-ae2c-2e7abe5f6c29, clickElement {id=270f7430-f74c-41a4-b16a-dbe1f034cbb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20496, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (1612fe00-01f5-464a-ae2c-2e7abe5f6c29)] -> xpath: //span[text()='Sign in']]
+Session ID: 1612fe00-01f5-464a-ae2c-2e7abe5f6c29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1612fe00-01f5-464a-ae2c-2e7abe5f6c29, clickElement {id=270f7430-f74c-41a4-b16a-dbe1f034cbb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20496, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (1612fe00-01f5-464a-ae2c-2e7abe5f6c29)] -> xpath: //span[text()='Sign in']]
+Session ID: 1612fe00-01f5-464a-ae2c-2e7abe5f6c29
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at package1.project1_maven.Home_Page.ClickOnSignIn(Home_Page.java:40)
+at package1.project1_maven.TC_2LoginToAmazonAndLogout.Loginlogout(TC_2LoginToAmazonAndLogout.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginlogout -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:13:26 IST" name="BrowserQuit" finished-at="2026-05-29T00:13:31 IST" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:13:31 IST" name="BrowserLaunch" finished-at="2026-05-29T00:13:40 IST" duration-ms="8218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="Loginlogout()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:13:40 IST" name="Loginlogout" finished-at="2026-05-29T00:13:44 IST" duration-ms="4271" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [239b35d7-8bf2-4f65-a593-c5c1ce5b715e, clickElement {id=b99bf86a-51a6-40a0-af33-13bf0f66a175}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26432, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (239b35d7-8bf2-4f65-a593-c5c1ce5b715e)] -> xpath: //span[text()='Sign in']]
+Session ID: 239b35d7-8bf2-4f65-a593-c5c1ce5b715e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [239b35d7-8bf2-4f65-a593-c5c1ce5b715e, clickElement {id=b99bf86a-51a6-40a0-af33-13bf0f66a175}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26432, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (239b35d7-8bf2-4f65-a593-c5c1ce5b715e)] -> xpath: //span[text()='Sign in']]
+Session ID: 239b35d7-8bf2-4f65-a593-c5c1ce5b715e
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at package1.project1_maven.Home_Page.ClickOnSignIn(Home_Page.java:40)
+at package1.project1_maven.TC_2LoginToAmazonAndLogout.Loginlogout(TC_2LoginToAmazonAndLogout.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginlogout -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@23348b5d]" started-at="2026-05-29T00:13:44 IST" name="BrowserQuit" finished-at="2026-05-29T00:13:47 IST" duration-ms="3139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC_2LoginToAmazonAndLogout -->
+      <class name="package1.project1_maven.TC1_LoginToAmazon">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:13:47 IST" name="BrowserLaunch" finished-at="2026-05-29T00:13:56 IST" duration-ms="9363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method retried="true" signature="withValidCreds()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:13:56 IST" name="withValidCreds" finished-at="2026-05-29T00:14:01 IST" duration-ms="4999" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4ecc38cc-7f36-45bb-b519-82e25dd3de75, clickElement {id=f91dc23f-5e0d-489f-bf8b-960ce27219c4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23656, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (4ecc38cc-7f36-45bb-b519-82e25dd3de75)] -> xpath: //span[text()='Sign in']]
+Session ID: 4ecc38cc-7f36-45bb-b519-82e25dd3de75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4ecc38cc-7f36-45bb-b519-82e25dd3de75, clickElement {id=f91dc23f-5e0d-489f-bf8b-960ce27219c4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23656, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (4ecc38cc-7f36-45bb-b519-82e25dd3de75)] -> xpath: //span[text()='Sign in']]
+Session ID: 4ecc38cc-7f36-45bb-b519-82e25dd3de75
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at package1.project1_maven.Home_Page.ClickOnSignIn(Home_Page.java:40)
+at package1.project1_maven.TC1_LoginToAmazon.withValidCreds(TC1_LoginToAmazon.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCreds -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:14:02 IST" name="BrowserQuit" finished-at="2026-05-29T00:14:05 IST" duration-ms="3139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:14:05 IST" name="BrowserLaunch" finished-at="2026-05-29T00:14:13 IST" duration-ms="8534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="withValidCreds()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:14:13 IST" name="withValidCreds" finished-at="2026-05-29T00:14:17 IST" duration-ms="3617" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bac205cd-989e-4f50-8dd0-19eb7c7f3305, clickElement {id=a02f5a92-bf6e-49f6-a054-406020428045}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36988, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bac205cd-989e-4f50-8dd0-19eb7c7f3305)] -> xpath: //span[text()='Sign in']]
+Session ID: bac205cd-989e-4f50-8dd0-19eb7c7f3305]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="nav-action-inner"> could not be scrolled into view
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bac205cd-989e-4f50-8dd0-19eb7c7f3305, clickElement {id=a02f5a92-bf6e-49f6-a054-406020428045}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36988, moz:profile: C:\Users\anmol\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bac205cd-989e-4f50-8dd0-19eb7c7f3305)] -> xpath: //span[text()='Sign in']]
+Session ID: bac205cd-989e-4f50-8dd0-19eb7c7f3305
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at package1.project1_maven.Home_Page.ClickOnSignIn(Home_Page.java:40)
+at package1.project1_maven.TC1_LoginToAmazon.withValidCreds(TC1_LoginToAmazon.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCreds -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@70325e14]" started-at="2026-05-29T00:14:17 IST" name="BrowserQuit" finished-at="2026-05-29T00:14:20 IST" duration-ms="3582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC1_LoginToAmazon -->
+    </test> <!-- FireFox Test -->
+    <test started-at="2026-05-29T00:14:20 IST" name="Edge Test" finished-at="2026-05-29T00:15:13 IST" duration-ms="52527">
+      <class name="package1.project1_maven.TC_2LoginToAmazonAndLogout">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@7c9d8e2]" started-at="2026-05-29T00:14:20 IST" name="BrowserLaunch" finished-at="2026-05-29T00:14:34 IST" duration-ms="13443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="Loginlogout()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@7c9d8e2]" started-at="2026-05-29T00:14:34 IST" name="Loginlogout" finished-at="2026-05-29T00:14:55 IST" duration-ms="21112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginlogout -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC_2LoginToAmazonAndLogout@7c9d8e2]" started-at="2026-05-29T00:14:55 IST" name="BrowserQuit" finished-at="2026-05-29T00:14:55 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC_2LoginToAmazonAndLogout -->
+      <class name="package1.project1_maven.TC1_LoginToAmazon">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@20d525]" started-at="2026-05-29T00:14:55 IST" name="BrowserLaunch" finished-at="2026-05-29T00:15:00 IST" duration-ms="4257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="withValidCreds()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@20d525]" started-at="2026-05-29T00:15:00 IST" name="withValidCreds" finished-at="2026-05-29T00:15:12 IST" duration-ms="12644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCreds -->
+        <test-method is-config="true" signature="BrowserQuit()[pri:0, instance:package1.project1_maven.TC1_LoginToAmazon@20d525]" started-at="2026-05-29T00:15:12 IST" name="BrowserQuit" finished-at="2026-05-29T00:15:13 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserQuit -->
+      </class> <!-- package1.project1_maven.TC1_LoginToAmazon -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
